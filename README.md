@@ -1,16 +1,17 @@
-# DeepWineLearning
-
 # Deep learning challenge - Wine dataset
 ![wien](https://user-images.githubusercontent.com/84380197/132534908-93568322-7fff-4935-8f3d-d30fefa0cbb4.jpg)
 # Description
 This was a project during our time at BeCode.  
 A dataset composed of white and red wines that included 12 features on chemical properties of wines. The target variable is the quality of wine on a scale from 1 to 10.
-Link to wine [dataset](https://archive.ics.uci.edu/ml/datasets/wine)
+
+Link to wine [dataset](https://archive.ics.uci.edu/ml/datasets/wine).
+
 # Goal
    1.  Use a deep learning library
    2. Prepare a data set for a machine learning model
    3. Put together a simple neural network
    4. Tune parameters of a neural network
+
 # Installation
 ## Python version
 * Python 3.7.11
