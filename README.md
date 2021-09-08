@@ -14,7 +14,7 @@ Link to wine [dataset](https://archive.ics.uci.edu/ml/datasets/wine).
 
 # Project Management
 
-Link to [dataset](https://trello.com/b/cnnL0KJL/wine-tasting)
+Link to [trello](https://trello.com/b/cnnL0KJL/wine-tasting)
 
 # Installation
 ## Python version
