@@ -12,6 +12,10 @@ Link to wine [dataset](https://archive.ics.uci.edu/ml/datasets/wine).
    3. Put together a simple neural network
    4. Tune parameters of a neural network
 
+# Project Management
+
+Link to [dataset](https://trello.com/b/cnnL0KJL/wine-tasting)
+
 # Installation
 ## Python version
 * Python 3.7.11
