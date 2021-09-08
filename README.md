@@ -80,7 +80,7 @@ I also use different optimizers (Adam / SGD / RMSprop) and variations in number 
 
 # Author
 | Name                   | Github                              |
-|------------------------|-------------------------------------|  |
+|------------------------|-------------------------------------|
 | Amaury van Kesteren    | https://github.com/AmauryvanKeste   |
 
 
