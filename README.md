@@ -49,6 +49,7 @@ The learning rate is nearly always 0.001
 
 Here I use the keras_tuner library's RandomSearch to look for the ideal combination of number of layers, number of neurons and learning rate.
 I also use different optimizers (Adam / SGD / RMSprop) and variations in number of epochs and splitting sizes.
+In order to avoid overfitting and to avoid losing time I add an EarlyStopping setting the monitor val_score, direction max.
 
 | Model nr | acc train | acc test | Target       | Feat eng     | Num classes | test_size    | Norm | Opt     | Num hidden | input layer | output layer | activation | epochs | loss     |
 |----------|-----------|----------|--------------|--------------|-------------|--------------|------|---------|------------|-------------|--------------|------------|--------|----------|
@@ -62,9 +63,19 @@ I also use different optimizers (Adam / SGD / RMSprop) and variations in number 
 | 11       |           | 0.982    | type of wine | q is feature | 2(binary)   | 0.33         | no   | adam    | 3          | dense       | dense 1      | sigmoid    | 50     | binary c |
 
 ## 3. Regression
+### 3.1 Using Kerasregressor
 
+| Model nr     | y       | Feat eng    | Num clas   | split   | Norm | opt  | Num hidden | layers1  | activation | output layer | act  | epochs | loss               | Kfold mean score | Kfold |
+|--------------|---------|-------------|------------|---------|------|------|------------|----------|------------|--------------|------|--------|--------------------|------------------|-------|
+| 13(standard) | quality | Added types | regression | 10Kfold | no   | adam | 1          | dense 12 | relu       | dense 1      | none | 100    | mean_squared_error | 0.54             | Kfold |
+| 14(larger)   | quality | Added types | regression | 10Kfold | no   | adam | 2          | dense 12 | relu       | dense 1      | none | 100    | mean_squared_error | 0.53             | Kfold |
+| 15(wider)    | quality | Added types | regression | 10Kfold | no   | adam | 1          | dense 20 | relu       | dense 1      | none | 100    | mean_squared_error | 0.52             | Kfold |
 
+### 3.2 Custom
 
+| Model nr | y       | Feat eng    | Num clas   | split        | Norm | opt  | Num hidden | layers1   | activation | output layer | act    | epochs | loss                | Accuracy test | Loss |
+|----------|---------|-------------|------------|--------------|------|------|------------|-----------|------------|--------------|--------|--------|---------------------|---------------|------|
+| 16       | quality | Added types | regression | No splitting | yes  | adam | 3          | Dense 256 | relu       | dense 1      | linear | 500    | mean_absolute_error | 0.6           | 0.56 |
 
 # Usage
 
