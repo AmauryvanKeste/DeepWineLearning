@@ -44,6 +44,12 @@ The learning rate is nearly always 0.001
 | 1        | quality | No        | 10(multiclass) | 0.3       | yes       | adam      | 1           | dense 50    | dense 10     | softmax    | 100    | cct  | 0.5       | 0.5      |
 | 2        | quality | No        | 7(multiclass)  | 0.3       | yes       | adam      | 1           | dense 50    | dense 10     | softmax    | 800    | cct  | 0.54      | 0.57     |
 
+## 1.1 Multi-class with SMOTE
+
+![smote_1](https://user-images.githubusercontent.com/84380197/132704762-b9c2f6ca-0e5e-4c43-8c63-c13494a9eb6b.png)
+
+![smote2](https://user-images.githubusercontent.com/84380197/132704767-99b0a929-2b18-494a-8a8a-2e59594c63f7.png)
+
 
 ## 2. Binary classification
 
