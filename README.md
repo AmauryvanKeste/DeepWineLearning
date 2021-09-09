@@ -95,7 +95,7 @@ Here we can see that both the training and testing lines are not too separated i
 | Datasets          | Directory containing the different datasets                 |
 | Summaries         | Directory containing summaries of the models                |
 | Final_version     | Directory containing all files for final version            | 
-| Graphs            | Directory containing all                                    |
+| Graphs            | Directory containing all graphs                             |
 
 
 # Author
