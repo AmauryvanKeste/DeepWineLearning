@@ -77,6 +77,15 @@ In order to avoid overfitting and to avoid losing time I add an EarlyStopping se
 |----------|---------|-------------|------------|--------------|------|------|------------|-----------|------------|--------------|--------|--------|---------------------|---------------|------|
 | 16       | quality | Added types | regression | No splitting | yes  | adam | 3          | Dense 256 | relu       | dense 1      | linear | 500    | mean_absolute_error | 0.6           | 0.56 |
 
+![cm_1](https://user-images.githubusercontent.com/84380197/132695143-aaadf7b2-2597-452e-a27b-ea4d1f558d46.png)
+![linear_1](https://user-images.githubusercontent.com/84380197/132695145-be325cba-6f5b-48da-88fe-6d65d474f994.png)
+Here above examples of overfitting.
+
+![linear_2](https://user-images.githubusercontent.com/84380197/132697340-8d046d75-d68a-4872-8b95-48759f217df2.png)
+![cm_2](https://user-images.githubusercontent.com/84380197/132697342-226af2a5-341e-486a-ba0f-9445c8bb23cb.png)
+Here we can see that both the training and testing lines are not too separated indicating no issues of overfitting.
+
+
 # Usage
 
 ### Main folder
@@ -85,8 +94,8 @@ In order to avoid overfitting and to avoid losing time I add an EarlyStopping se
 | Old               | Directory containing irrelevant files                       |
 | Datasets          | Directory containing the different datasets                 |
 | Summaries         | Directory containing summaries of the models                |
-| final_version | Directory containing all files for final version                |
-
+| Final_version     | Directory containing all files for final version            | 
+| Graphs            | Directory containing all                                    |
 
 
 # Author
